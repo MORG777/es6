@@ -1,18 +1,23 @@
 import CalcJournalItem from './CalcJournalItem';
 
-function CalcJournal(divId) {
-    /**
-     * CalcJournalItem[]
-     */
-    this.journal = [];
+class CalcJournal {
 
-    this.container = document.getElementById(divId);
+    constructor(divId) {
+        /**
+         * CalcJournalItem[]
+         */
+        this.journal = [];
 
-    this.push = function(formula, result) {
-        this.journal.push( new CalcJournalItem(formula, result) )
+        this.divId = divId;
     }
 
-    this.display = function() {
+    push (formula, result) {
+        this.journal.push( new CalcJournalItem(formula, result) );
+        console.log('111')
+    }
+    
+
+    display() {
         let result = '';
         for(let i = 0; i < this.journal.length; i ++) {
             let item = this.journal[i];
@@ -24,7 +29,8 @@ function CalcJournal(divId) {
             `;
             result += itemResult;
         }
-        this.container.innerHTML = result;
+        
+        document.getElementById(this.divId).innerHTML = result;
 
     }
 }

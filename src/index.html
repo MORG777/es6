@@ -5,16 +5,22 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
     <link href="styles/styles.css" rel="stylesheet">
   </head>
-  <body class="Lighter">
+  <body>
     <h1><%= htmlWebpackPlugin.options.title %></h1>
     <header>
       <h1>Calculator</h1>
-      Theme: <button onclick="switchTheme('Lighter')"> Lighter </button> | <button onclick="switchTheme('Dark')"> Dark </button>
+      Theme: 
+      <div class="slider-switcher">
+          <div class="item1 firstPosition" >Light</div>
+          <div class="item2 secondPosition">Dark</div>
+          <div class="switcher"></div>
+      </div>
     </header>
 
     <div id="Engineer" class="calc"></div>
     <div id="Simple" class="calc"></div>
 
+    <div class="clear"></div>
 
     
     <footer>

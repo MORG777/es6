@@ -1,40 +1,73 @@
 body{}
+.clear{display: inline-block;width:100%;height:1px;clear: both;}
 .Lighter{background:#ededed; color:#333;}
 .Dark{background:#333; color:#ededed}
 
-.calc-wrapper{
-    width:250px; 
-    border: 1px #000 solid; 
-    background:#333;
-  }
-  .result{width: 230px; margin-top: 10px; margin-left: 6px; margin-bottom: 10px; line-height: 25px; text-align:right; font-size: 20px; background-color: #fff; border: 1px #000 solid; border-radius: 10px; height:25px;}
-  .formula{font-size:20px; text-align:right; height:45px;}
-  .buttons{
-    margin:5px;
-    line-height: 50px; 
-    text-align: center; 
-    background-color:#fff; 
-    border: 1px #000 solid; 
-    border-radius: 5px; 
-    
-  }
-  .btn_row {
-    display: flex;
-    justify-content: space-between;
+button{
+  width:100px;
+  height:100px;
+  margin:0 5px 5px 0px;
+  background-color:#efefef;
+  transition-property:background-color;
+  border:1px #333 solid;
+  transition-duration: 0.5s;
+}
+button:hover{
+  background-color:#333;
+  color:#cdcdcd;
+  border-color: #666;
+}
 
-  }
-  .btn_row *{
-    flex:0 0 25%;
-  }
-
-  .calc{width:250px;}
-
-  .calcWrapper{position:relative;}
-    .calcWrapper .history, .calcWrapper .journalContainer{width:150px; top:0; left:100%; height:100%; overflow: scroll; position:absolute; margin-left:50px; display:none}
 
 
 /* Styles for buttons */
-.Lighter button{border-radius: 5px;}
-.Dark button{border-radius: 5px;}
+.Lighter button{}
+.Dark button{}
 
 .Dark .result{background:#333; border-color:#ededed;}
+
+.calculator-buttons{display:flex; flex-flow: row wrap;}
+
+.calculator-main{clear: both; width: 400px; position:relative;}
+
+
+
+.calculatorWrapper{position:relative;}
+.calculator-additional{position:absolute; left:100%; top:0;}
+.journal-wrapper{}
+
+.calculator-buttons-main {width:90%;}
+.calculator-buttons-actions{display:flex; justify-content:center; flex-flow:row wrap; text-align:center}
+.calculator-buttons-actions--item{width:10%;height:50px;}
+
+
+
+
+
+
+.calculator-buttons-numbers{display:flex; justify-content:center; flex-flow: row wrap; text-align:center; }
+.calculator-buttons-numbers-item{   }
+.calculator-buttons-numbers-item-calculate{}
+.calculator-buttons-clear{flex: 0 0 33.3333%;  height:50px;}
+
+
+
+.slider-switcher{border-radius:10px; width:200px;position:relative; height:25px; border:1px #111 solid; color:#cecece;}
+  .slider-switcher .firstPosition{position: absolute; left:0; line-height:25px; padding:0 5px; }
+  .slider-switcher .secondPosition{position: absolute; right:0; line-height:25px; padding:0 5px; }
+  .slider-switcher .switcher{
+    border-radius:10px; 
+    position:absolute;
+    top:-1px;
+    left:-1px;
+    width: 70px; 
+    height:25px; 
+    background:#cecece; 
+    transition-property:left;
+    border:1px #333 solid;
+    transition-duration: 0.5s;
+  }
+
+  .slider-switcher.pos2 .switcher{
+    left:130px;
+  }

@@ -9,24 +9,17 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
 	module: {
 		rules: [
-			/*{
+			{
 				test: /\.js$/,
 				include: [
                     path.resolve(__dirname, './src')
                 ],
 				loader: 'babel-loader',
 
-				options: {
-					presets: [
-						'env',
-						{
-							modules: false
-						}
-					],
-
-					plugins: ['syntax-dynamic-import']
+				query: {
+					presets: ['es2015']
 				}
-			},*/
+			},
 			{
 				test: /\.(scss|css)$/,
 
@@ -58,7 +51,7 @@ module.exports = {
     ],
 
 	entry: {
-		app: './src/app.js'
+		app: './src/js/app.js'
 	},
 
 	output: {
