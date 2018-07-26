@@ -1,19 +1,30 @@
-/*import ECalculator from './calculator/engeener';
-
-
-let calcE = new ECalculator('Engineer', true);
-calcE.init();
-
-
-let calcS = new ECalculator('Simple', false);
-calcS.init();
-*/
 import Calculator from './calculator/Calculator';
+import TwoPositionsSwitcher from './switcher/TwoPositionsSwitcher';
+
 import ThemeSwitcher from './ThemeSwitcher';
-import sliderSwitcher from './slider';
+
+import '../styles/styles.scss';
+
+
+
 
 let calcE = new Calculator('Engineer', true);
 calcE.init();
 
 
-document.Switcher = new ThemeSwitcher();
+document.themeSwitcher = new ThemeSwitcher();
+
+
+
+/**
+ * create theme switcher interface
+ * param1 - where to place switcher
+ * param2 - possible values
+ * param3 - firing event
+ */
+
+document.themeSwitcherInterface = new TwoPositionsSwitcher('#themeSwitcher', ['Lighter', 'Dark'], 'switchTheme');
+// attach theme switcher event
+document.addEventListener('switchTheme', function(e){
+    document.themeSwitcher.switchTheme(e.detail.value);
+})

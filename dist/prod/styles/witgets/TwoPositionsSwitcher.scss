@@ -1,0 +1,49 @@
+/* == Variables == */
+$TwoPositionsSwitcher-dark-color: #000;
+$TwoPositionsSwitcher-light-color: #cecece;
+$TwoPositionsSwitcher-height: 22px;
+
+
+.TwoPositionsSwitcher {
+    line-height:$TwoPositionsSwitcher-height; 
+    border-radius:10px;
+    position:relative; 
+    border:1px $TwoPositionsSwitcher-dark-color solid; 
+    display: inline-block; 
+    cursor: pointer;
+    height:$TwoPositionsSwitcher-height;
+
+    &--position{
+        position:relative; top:0; padding:0 10px;
+
+        &:nth-child(1){ left:0; }
+        &:nth-child(2){ right:0 }
+
+        &--active{
+            /* == selected position style ==*/
+        }
+    }
+
+    &--switcher {
+        position:absolute;
+        top:-1px;
+        left: -1px;
+        background:$TwoPositionsSwitcher-light-color;
+        border:1px $TwoPositionsSwitcher-dark-color solid;
+        width:50%;
+        height: $TwoPositionsSwitcher-height;
+        border-radius: 10px;
+        transition-property: margin-left;
+        transition-duration: 1s;
+
+        &--pos1{
+            margin-left:0;
+        }
+        
+        &--pos2{
+            margin-left:50%;
+        }
+    }
+
+
+}

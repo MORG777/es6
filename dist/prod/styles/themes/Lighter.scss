@@ -1,0 +1,20 @@
+/**
+ * variables
+ */
+$theme-light-back-color : #ededed;
+$theme-light-text-color : #333;
+
+
+
+
+/**
+ * styles
+ */
+.Lighter{
+    background: $theme-light-back-color; 
+    color: $theme-light-text-color;
+
+    .result {
+        color: $theme-light-text-color;
+    }
+}

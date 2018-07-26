@@ -242,7 +242,8 @@ function ECalculator(divId, engineerMode){
         'ln': _this.lnAction,        // ln
         'n!': _this.factorialAction, // factorial 
         'x^2' : _this.powAction,     // pow    
-        '+/-' : _this.unarnyMinus,
+        '+/-' : _this.unarnyMinus,   // unary minus
+        
     };
     // actions, requires 2 parameters  
     _this.twoActorsActions = {

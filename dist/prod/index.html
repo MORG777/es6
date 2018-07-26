@@ -3,18 +3,28 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Production mode</title>
-    <link href="styles/styles.css" rel="stylesheet">
   </head>
-  <body class="Lighter">
-    <h1>Production mode</h1>
+  <body>
+    <div id="top-menu">
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#">Стандартный</a></li>
+            <li><a href="#">Инженерный</a></li>
+          </ul>
+          <a href="#">Вид</a>
+        </li>
+      </ul>
+    </div>
     <header>
-      <h1>Calculator</h1>
-      Theme: <button onclick="switchTheme('Lighter')"> Lighter </button> | <button onclick="switchTheme('Dark')"> Dark </button>
+      <h1>Calculator : Production mode</h1>
+      Theme: <span id="themeSwitcher"></span>
     </header>
 
     <div id="Engineer" class="calc"></div>
     <div id="Simple" class="calc"></div>
 
+    <div class="clear"></div>
 
     
     <footer>
@@ -25,5 +35,5 @@
             document.body.className = theme;
         }
       </script>
-  <script type="text/javascript" src="app.4f2a61b3a8f3b436d507.js"></script></body>
+  <script type="text/javascript" src="app.f6921c9b27d84eb3b79e.js"></script></body>
 </html>

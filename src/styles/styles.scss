@@ -1,0 +1,15 @@
+/**
+ *
+ */
+
+@import './witgets/TwoPositionsSwitcher.scss';
+@import './witgets/Calculator/Calculator.scss';
+
+/**
+ * blocks
+ */
+@import './blocks/body.scss';
+@import './blocks/buttons.scss';
+
+.clear{display: inline-block;width:100%;height:1px;clear: both;}
+

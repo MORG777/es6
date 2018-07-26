@@ -1,0 +1,17 @@
+/**
+ * Themes
+ */
+ @import '../themes/Dark.scss';
+ @import '../themes/Lighter.scss';
+
+ /**
+  * blocks
+  */
+  @import './header.scss';
+  @import './footer.scss';
+  @import './menu.scss';
+
+
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

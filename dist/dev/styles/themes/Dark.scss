@@ -1,0 +1,21 @@
+/**
+ * variables
+ */
+ $theme-dark-back-color : #999;
+ $theme-dark-text-color : #333;
+
+
+
+.Dark{
+    background: $theme-dark-back-color; 
+    color: $theme-dark-text-color;
+
+    button{
+
+    }
+
+    .result{
+        background: $theme-dark-back-color; 
+        border-color: $theme-dark-text-color;
+    }
+}

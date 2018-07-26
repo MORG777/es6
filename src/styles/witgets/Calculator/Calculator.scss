@@ -1,0 +1,136 @@
+@import './additional-blocks/CalcJournal.scss';
+
+
+/* == Variables == */
+$calculator-dark-color: #333;
+$calculator-light-color: #efefef;
+$calculator-hover-text-color: #cdcdcd;
+$calculator-hover-back-color: $calculator-dark-color;
+
+.calculatorWrapper{
+    position: relative;
+    width: 400px; 
+}
+
+.calculator-main{
+    clear: both; 
+    position:relative;
+    width:90%;
+
+    .calculator-formula{
+        text-align:right;
+        margin:0 48px 0 0;
+        height:20px;
+    }
+
+    .calculator-result{
+        /* ==  == */
+        display:block;
+        height: 45px;
+        line-height:45px;
+        font-size:1.3em;
+        border-radius:5px;
+        border:1px $calculator-dark-color solid;
+        margin:10px 48px 10px 0;
+        text-align:right;
+        padding:0 5px;
+        text-overflow:ellipsis;
+    }
+
+    .calculator-buttons {
+        display:flex; 
+        flex-flow: row wrap;
+
+        &-main{
+            float: left;
+            width: %;
+        }
+
+        &-clear{
+            width:100px;
+            height:50px;
+            margin:0 5px 5px 0px;
+            background-color:$calculator-light-color;
+            transition-property: background-color;
+            border:1px $calculator-dark-color solid;
+            transition-duration: 0.5s;
+
+            &:hover{
+                background-color:$calculator-hover-back-color;
+                color: $calculator-hover-text-color;
+                border-color: #666;
+            }
+        }
+    }
+}
+.calculator-buttons-numbers-item-calculate {
+        width:100px;
+        height:100px;
+        margin:0 5px 5px 0px;
+        background-color:$calculator-light-color;
+        transition-property: background-color;
+        border:1px $calculator-dark-color solid;
+        transition-duration: 0.5s;
+
+        &:hover{
+            background-color:$calculator-hover-back-color;
+            color: $calculator-hover-text-color;
+            border-color: #666;
+        }
+}
+/* == numeric pad block == */
+.calculator-buttons-numbers{
+    display:flex; 
+    justify-content:center; 
+    flex-flow: row wrap; 
+    text-align:center;
+
+    &-item {
+        width:100px;
+        height:100px;
+        margin:0 5px 5px 0px;
+        background-color:$calculator-light-color;
+        transition-property: background-color;
+        border:1px $calculator-dark-color solid;
+        transition-duration: 0.5s;
+
+        &:hover{
+            background-color:$calculator-hover-back-color;
+            color: $calculator-hover-text-color;
+            border-color: #666;
+        }
+    }      
+}
+/* == Actions block ==*/
+.calculator-buttons-actions{
+    display:flex; 
+    justify-content:center; 
+    flex-flow:row wrap; 
+    text-align:center;
+
+    &--item{
+        width: 25%;
+        height: 50px;
+
+        margin:0 5px 5px 0px;
+        background-color:$calculator-light-color;
+        transition-property: background-color;
+        border:1px $calculator-dark-color solid;
+        transition-duration: 0.5s;
+
+        &:hover{
+            background-color:$calculator-hover-back-color;
+            color: $calculator-hover-text-color;
+            border-color: #666;
+        }
+    }
+}
+
+/*== Additional ==*/
+.calculator-additional{position:absolute; left:200%; top:0;}
+.journal-wrapper{}
+
+.calculator-buttons-numbers{ }
+.calculator-buttons-numbers-item{   }
+.calculator-buttons-numbers-item-calculate{}
+.calculator-buttons-clear{flex: 0 0 33.3333%;  height:50px;}

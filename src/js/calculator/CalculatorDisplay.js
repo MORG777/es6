@@ -45,9 +45,9 @@ class CalculatorDisplay {
                                 <button class="calculator-buttons-numbers-item">6</button>
                                 <button class="calculator-buttons-numbers-item">5</button>
                                 <button class="calculator-buttons-numbers-item">4</button>
-                                <button class="calculator-buttons-numbers-item">3</button>
-                                <button class="calculator-buttons-numbers-item">2</button>
                                 <button class="calculator-buttons-numbers-item">1</button>
+                                <button class="calculator-buttons-numbers-item">2</button>
+                                <button class="calculator-buttons-numbers-item">3</button>
                                 <button class="calculator-buttons-numbers-item-calculate">=</button>
                                 <button class="calculator-buttons-numbers-item">0</button>
                                 <button class="calculator-buttons-numbers-item">.</button>

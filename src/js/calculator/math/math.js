@@ -35,8 +35,8 @@ function multiply( firstActor, secondActor ) {
 }
 /**
  * Sqrt
- * @param {*} firstActor 
- * @param {*} secondActor 
+ * @param {Number} firstActor 
+ * @param {Number} secondActor 
  */
 function sqrt (firstActor, secondActor) {
     secondActor = secondActor ? secondActor : 2 ;
